@@ -20,9 +20,26 @@ body{
     background-color: #1867c0;
     color: white;
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+    box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.75);
+
 }
 
+.cabecalho > h1{
+    margin: 0px;
+    font-weight: 300;
+    font-size: 2.8rem
+}
+
+.cabecalho > h2{
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
 .principal{
     grid-area: principal;
     height: calc(100vh - 180px);
@@ -30,7 +47,22 @@ body{
     padding: 20px;   
 }
 
+.conteudo{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+}
+
 .rodape{
     grid-area: rodape;
     background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: #444
+    ;
 }
